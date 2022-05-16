@@ -293,3 +293,164 @@ a:hover {
     font-size: 12px;
     line-height: 2;
 }
+
+.button {
+    display: flex;
+    width: 208px;
+    margin: 0 auto;
+    padding: 11px 11px 13px;
+    box-sizing: border-box;
+    border: solid 2px currentColor;
+    border-radius: 24px;
+    color: #2E5180;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .details {
+        display: flex;
+        margin-top: 75px;
+    }
+
+    .detail {
+        flex: 1;
+        margin-right: 3.22%;
+    }
+
+    .detail:first-child {
+        margin-left: 3.22%;
+    }
+
+    .detail:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .detail__heading {
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .detail__paragraph {
+        width: 78%;
+        max-width: none;
+    }
+
+    .detail__figure {
+        height: 360px;
+        margin-bottom: 33px;
+    }
+
+    /* buttonの位置を揃える */
+    .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail .button {
+        margin-top: auto;
+    }
+}
+
+/* contact */
+.contact {
+    padding: 62px 0;
+    background-color: #EEF4F8;
+    color: #333333;
+}
+
+.text__heading {
+    margin-bottom: 42px;
+    font-size: 24px;
+}
+
+.text__paragraph {
+    font-size: 12px;
+    line-height: 2.17;
+}
+
+/* form */
+.form {
+    margin-top: 46px;
+}
+
+.form ::placeholder {
+    color: #CDD6DD;
+    opacity: 1;
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 12px 20px 14px;
+    border: solid 1px #CDD6DD;
+    border-radius: 0;
+    -webkit-appearance: none;
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+.form__textarea {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 12px 20px 14px;
+    border: solid 1px #CDD6DD;
+    border-radius: 0;
+    -webkit-appearance: none;
+    height: 150px;
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+.form .button {
+    width: 100%;
+    margin: auto;
+    border: none;
+    background-color: #2E5180;
+    color: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+@media (min-width: 900px) {
+    .contact {
+        padding: 0;
+        background: none;
+    }
+
+    .contact .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 96px 9% 62px;
+        box-sizing: border-box;
+        background-color: #EEF4F8;
+    }
+
+    .contact .text {
+        flex: 0 0 auto;
+    }
+
+    .contact .form {
+        flex: 1 1 auto;
+        max-width: 457px;
+        margin-left: 1em;
+        margin-top: 0;
+    }
+
+    .text__heading {
+        font-size: 36px;
+    }
+
+    .text__paragraph {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    .form .button {
+        width: 272px;
+    }
+}

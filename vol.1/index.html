@@ -52,25 +52,62 @@
         <p class="service__paragraph">私達にできること</p>
 
         <div class="details">
-            <div class="detail details__office">
+            <article class="detail details__office">
                 <figure class="detail__figure detail__figure--office"></figure>
                 <h3 class="detail__heading">オフィス業務<br>サポート</h3>
                 <p class="detail__paragraph">書類管理、電話、メール対応、スケジュール管理、デジタルトランスフォーメーションなど、さまざまなオフィス業務のサポートを行います。</p>
-                <a href="#">OFFICE</a>
-            </div>
-            <div class="detail details__manage">
+                <a href="#" class="button">OFFICE</a>
+            </article>
+            <article class="detail details__manage">
                 <figure class="detail__figure detail__figure--manage"></figure>
                 <h3 class="detail__heading">マネージメント<br>サポート</h3>
                 <p class="detail__paragraph">プロジェクトチームの構成メンバーのマネージメント、案件の進捗管理、リーダーのアシスタントサポートなどを行います。</p>
-                <a href="#">MANAGEMENT</a>
-            </div>
-            <div class="detail details__research">
+                <a href="#" class="button">MANAGEMENT</a>
+            </article>
+            <article class="detail details__research">
                 <figure class="detail__figure detail__figure--research"></figure>
                 <h3 class="detail__heading">調査・研究<br>サポート</h3>
                 <p class="detail__paragraph">各種事業の立ち上げ、運営にかかわる調査・研究のサポートや、特定分野の専門家との提携のお手伝いなどを行います。</p>
-                <a href="#">RESEARCH</a>
-            </div>
+                <a href="#" class="button">RESEARCH</a>
+            </article>
         </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <div class="text">
+            <h2 class="text__heading">お問い合わせ</h2>
+            <p class="text__paragraph">もっと業務を効率化したい<br>
+                マネージメントの煩わしさから開放されたい<br>
+                本業に集中したいなどなど、<br>
+                些細なことでもお気軽にお問い合わせください。
+            </p>
+        </div>
+
+        <form class="form">
+            <p>
+                <label>
+                    <span class="sr-only">名前</span>
+                    <input type="text" name="name" placeholder="名前" class="form__input">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="sr-only">メールアドレス</span>
+                    <input type="email" name="email" placeholder="メールアドレス" class="form__input">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="sr-only">メッセージ</span>
+                    <textarea name="message" placeholder="メッセージを入力してください" class="form__textarea"></textarea>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="送信" class="button">
+            </p>
+        </form>
     </div>
 </section>
 
