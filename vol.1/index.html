@@ -22,7 +22,16 @@
                 <p class="header__desc">確かなスタッフによる業務サポート</p>
             </div>
         </div>
-        <button class="nav-button" type="button">
+
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="#">会社情報</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#" class="button header__nav--button">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-button" type="button" onclick="navFunc()">
             <span class="sr-only">MENU</span>
         </button>
     </div>
@@ -110,6 +119,37 @@
         </form>
     </div>
 </section>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__info">
+            <div class="footer__site">
+                <img src="./assets/bb-white.svg" alt="" class="footer__img">
+                <div>
+                    <p class="footer__corp">BB アシスタントカンパニー</p>
+                </div>
+            </div>
+
+            <p class="footer__address">
+                〒001-001<br>
+                北海道中央区南53条東西ビル8F<br>
+                0001-1234-5678
+            </p>
+        </div>
+
+        <ul class="footer__sns">
+            <li><a href="#"><img src="./assets/logo-twitter.svg" alt="Twitter" class="sns__img"></a></li>
+            <li><a href="#"><img src="./assets/logo-facebook.svg" alt="Facebook" class="sns__img"></a></li>
+            <li><a href="#"><img src="./assets/logo-instagram.svg" alt="Instagram" class="sns__img"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    function navFunc() {
+        document.querySelector('html').classList.toggle('open')
+    }
+</script>
 
 </body>
 </html>
