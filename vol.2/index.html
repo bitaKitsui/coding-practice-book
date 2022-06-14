@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>YAMACAFE ヤマカフェ</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <header class="header">
+        <div class="site">
+            <img src="assets/yamacafe-w.svg" alt="YAMACAFE ヤマカフェ">
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">こだわり</a></li>
+                <li><a href="#">お知らせ</a></li>
+                <li><a href="#">営業時間</a></li>
+            </ul>
+        </nav>
+        
+        <button type="button" class="nav-button" onClick="navFunc()">
+            <span class="sr-only">MENU</span>
+        </button>
+    </header>
+
+    <div class="hero">
+        <h1>
+            <img src="assets/catch.svg" alt="Take A Break">
+        </h1>
+    </div>
+
+    <script>
+        function navFunc() {
+            document.querySelector('html').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
